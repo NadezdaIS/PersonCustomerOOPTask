@@ -1,5 +1,4 @@
 public class Person {
-
     private String name;
     private String email;
     private String phoneNumber;
@@ -10,13 +9,16 @@ public class Person {
         this.phoneNumber = phoneNumber;
     }
 
-    public String sayHello () {
-        return "Hello person";
+    public String sayHello(){
+        return "hello person";
     }
-    /*public String introduce () {
-        return "{name :\"" + this.name + "\", " email"\"" this.email  + phone number: " + this.phoneNumber
-    }*/
 
+    public String introduce(){
+        return "{" +
+                "\"name\" : \"" + this.name + "\", " +
+                "\"phoneNumber\" : \"" + this.phoneNumber + "\"" +
+                "}";
+    }
 
     public String getName() {
         return name;
