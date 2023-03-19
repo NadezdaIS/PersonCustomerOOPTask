@@ -10,7 +10,7 @@ public class Person {
     }
 
     public String sayHello(){
-        return "hello person";
+        return "Hello person!";
     }
 
     public String introduce(){
